@@ -20,7 +20,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     font-family: "Manrope", "San-Serif";
    
 }
@@ -56,6 +56,23 @@ header{
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
+.loader {
+    border: 4px solid hsl(217, 19%, 24%);
+    border-top: 4px solid hsl(150, 100%, 66%);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Hide by default */
+  }
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
 #image{
     display: block;
     width: 20rem;
@@ -85,9 +102,13 @@ header{
 }
 
 @media (min-width: 768px){
+    body{
+        min-height: 100vh;
+    }
     .advice{
         width: 25rem;
     }
+   
     #image{
         display: none;
     }
