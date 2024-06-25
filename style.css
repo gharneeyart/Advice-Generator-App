@@ -26,8 +26,8 @@ body{
 }
 .card{
     background-color: var(--DarkGrayishBlue);
-    min-height: 20rem;
-    max-width: 33.75rem;
+    min-height: 15rem;
+    max-width: 30rem;
     width: 90%;
     min-width: 10rem;
     text-align: center;
@@ -115,7 +115,7 @@ header{
     #image1 {
         display: block;
         width: 25rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3.5rem;
         margin-top: 1rem;
     }
     .dice{
