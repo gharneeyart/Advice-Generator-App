@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+    --Para: "28px";
+}
+body{
+    background-color: var(--DarkBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Manrope", "San-Serif";
+   
+}
+.card{
+    background-color: var(--DarkGrayishBlue);
+    min-height: 20rem;
+    max-width: 33.75rem;
+    width: 90%;
+    min-width: 10rem;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+header{
+    width: 18rem;
+    color: var(--NeonGreen);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.advice{
+    width: 18rem;
+    /* height: 13.5rem; */
+    text-align: center;
+    align-items: center;
+    color: var(--LightCyan);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+#image{
+    display: block;
+    width: 20rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+#image1{
+    display: none;
+}
+.dice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 90%;
+    position: absolute;
+    border-radius: 2rem;
+    background-color: var(--NeonGreen);
+    width: 70px;
+    height: 70px;
+    cursor: pointer;  
+}
+.dice:hover {
+    box-shadow: 0 0 10px 1px hsl(150, 100%, 66%);
+}
+#icon {   
+    width: 30px;
+}
+
+@media (min-width: 768px){
+    .advice{
+        width: 25rem;
+    }
+    #image{
+        display: none;
+    }
+    #image1 {
+        display: block;
+        width: 25rem;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+    }
+    .dice{
+        width: 50px;
+        height: 50px;
+        top: 92%;
+    }
+    #icon {   
+        width: 24px;
+    }
+}
